@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Boutique Advertisement</title>
+
+<style>
+    body{
+        margin:0;
+        border-top:4px solid black;
+        font-family:"Times New Roman", serif;
+    }
+
+    .container{
+        width:100%;
+    }
+
+    h2{
+        text-align:center;
+        margin-top:15px;
+        font-size:22px;
+        font-weight:bold;
+    }
+
+    .highlight{
+        background:yellow;
+        padding:2px 5px;
+    }
+
+    .image{
+        text-align:center;
+        margin-top:10px;
+    }
+
+    .image img{
+        width:250px;
+    }
+
+    ul{
+        font-size:22px;
+        margin-left:10px;
+        line-height:1.2;
+    }
+
+    .offer{
+        text-align:center;
+        margin:20px 0;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .offer span{
+        background:yellow;
+        padding:2px 5px;
+    }
+
+    hr{
+        margin:15px 0;
+    }
+
+    .address{
+        margin-left:2px;
+        font-size:18px;
+    }
+
+    .phone{
+        text-align:center;
+        font-size:26px;
+        font-weight:bold;
+        margin:15px 0;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>
+Exclusive Designer Collections
+<span class="highlight">"Style That Defines You"</span>
+</h2>
+
+<div class="image">
+<img src="boutique.jpg" alt="Boutique">
+</div>
+
+<ul>
+<li>Latest Women's Fashion</li>
+<li>Designer Sarees &amp; Lehengas</li>
+<li>Stylish Kurtis &amp; Gowns</li>
+<li>Bridal Wear Collection</li>
+<li>Custom Tailoring Available</li>
+<li>Festival &amp; Party Wear</li>
+<li>Affordable Prices</li>
+<li>Special Discounts Every Weekend</li>
+</ul>
+
+<div class="offer">
+<span>Visit Today for Amazing Offers!</span>
+</div>
+
+<hr>
+
+<div class="address">
+<b>Address:</b><br>
+Elegant Fashion Boutique<br>
+25 MG Road,<br>
+Bengaluru - 560001
+</div>
+
+<hr>
+
+<div class="phone">
+PHONE NO: +91-98765-43210
+</div>
+
+</div>
+
+</body>
+</html>
