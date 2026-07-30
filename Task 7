@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Based JavaScript Dialog Boxes</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+.container{
+    width:600px;
+    margin:80px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+h1{
+    color:#0b1d8d;
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+button{
+    width:340px;
+    padding:15px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    background:#1976e9;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0d5fc5;
+}
+</style>
+
+<script>
+function action1(){
+    alert("User Action Validator");
+}
+
+function action2(){
+    alert("Interactive Message Console");
+}
+
+function action3(){
+    alert("Smart Pop-up Notifier");
+}
+
+function action4(){
+    alert("Confirmation & Input Assistant");
+}
+
+function action5(){
+    alert("Dynamic User Interaction Box");
+}
+
+function action6(){
+    alert("Pop-up Decision Maker");
+}
+
+function action7(){
+    alert("Alert & Response System");
+}
+
+function action8(){
+    alert("Interactive Prompt & Alert Hub");
+}
+
+function action9(){
+    alert("JavaScript Pop-up Manager");
+}
+
+function action10(){
+    alert("User Feedback Dialog Suite");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application Based JavaScript Dialog Boxes</h1>
+
+<button onclick="action1()">1. User Action Validator</button><br>
+
+<button onclick="action2()">2. Interactive Message Console</button><br>
+
+<button onclick="action3()">3. Smart Pop-up Notifier</button><br>
+
+<button onclick="action4()">4. Confirmation & Input Assistant</button><br>
+
+<button onclick="action5()">5. Dynamic User Interaction Box</button><br>
+
+<button onclick="action6()">6. Pop-up Decision Maker</button><br>
+
+<button onclick="action7()">7. Alert & Response System</button><br>
+
+<button onclick="action8()">8. Interactive Prompt & Alert Hub</button><br>
+
+<button onclick="action9()">9. JavaScript Pop-up Manager</button><br>
+
+<button onclick="action10()">10. User Feedback Dialog Suite</button>
+
+</div>
+
+</body>
+</html>
