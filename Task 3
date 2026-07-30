@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Boutique</title>
+
+<style>
+    body{
+        margin:0;
+        font-family:"Times New Roman", serif;
+    }
+
+    .header{
+        text-align:center;
+        padding:20px;
+    }
+
+    h1{
+        font-size:30px;
+        margin:0;
+        font-weight:bold;
+    }
+
+    h2{
+        margin-top:15px;
+        font-style:italic;
+        font-size:18px;
+    }
+
+    hr{
+        margin:10px 0;
+    }
+
+    .image{
+        text-align:center;
+        margin-top:10px;
+    }
+
+    .image img{
+        width:260px;
+        height:200px;
+        border:1px solid lightgray;
+    }
+
+    .content{
+        margin:20px;
+        font-size:18px;
+    }
+
+    ol{
+        line-height:1.5;
+    }
+
+    a{
+        color:blue;
+        text-decoration:underline;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>🌸 FASHION BOUTIQUE 🌸</h1>
+
+<h2>Style That Speaks for You</h2>
+
+</div>
+
+<hr>
+
+<div class="image">
+<img src="fashion.jpg" alt="Fashion Boutique">
+</div>
+
+<div class="content">
+
+<ol>
+<li><a href="#">Women's Collection</a></li>
+<li><a href="#">Men's Collection</a></li>
+<li>Contact Us: +91-9876543210</li>
+<li>Address: 25, MG Road, Chennai</li>
+</ol>
+
+</div>
+
+<hr>
+
+</body>
+</html>
