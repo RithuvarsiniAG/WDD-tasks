@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <div id="nameError" class="error"></div>
+
+        <input type="email" id="email" placeholder="Enter Email">
+        <div id="emailError" class="error"></div>
+
+        <input type="password" id="password" placeholder="Enter Password">
+        <div id="passwordError" class="error"></div>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        <div id="confirmError" class="error"></div>
+
+        <input type="text" id="mobile" placeholder="Enter Mobile Number">
+        <div id="mobileError" class="error"></div>
+
+        <input type="submit" value="Register">
+
+    </form>
+</div>
+
+<script>
+function validateForm() {
+
+    // Clear previous errors
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("passwordError").innerHTML = "";
+    document.getElementById("confirmError").innerHTML = "";
+    document.getElementById("mobileError").innerHTML = "";
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let mobile = document.getElementById("mobile").value.trim();
+
+    let valid = true;
+
+    // Name Validation
+    if (name === "") {
+        document.getElementById("nameError").innerHTML = "Name is required";
+        valid = false;
+    }
+
+    // Email Validation
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        document.getElementById("emailError").innerHTML = "Enter a valid email";
+        valid = false;
+    }
+
+    // Password Validation
+    if (password.length < 6) {
+        document.getElementById("passwordError").innerHTML =
+        "Password must be at least 6 characters";
+        valid = false;
+    }
+
+    // Confirm Password
+    if (password !== confirmPassword) {
+        document.getElementById("confirmError").innerHTML =
+        "Passwords do not match";
+        valid = false;
+    }
+
+    // Mobile Validation
+    let mobilePattern = /^[0-9]{10}$/;
+    if (!mobile.match(mobilePattern)) {
+        document.getElementById("mobileError").innerHTML =
+        "Enter a valid 10-digit mobile number";
+        valid = false;
+    }
+
+    if (valid) {
+        alert("Registration Successful!");
+    }
+
+    return valid;
+}
+</script>
+
+</body>
+</html>
