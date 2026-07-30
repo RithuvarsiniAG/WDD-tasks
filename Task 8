@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Quiz Login</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#eeeeee;
+}
+
+.login-box{
+    width:500px;
+    margin:80px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    font-size:17px;
+    box-sizing:border-box;
+}
+
+button{
+    background:#1a33ff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0019b8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Student Login</h1>
+
+<input type="text" id="username" placeholder="Enter Username">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+
+function login(){
+
+let username=document.getElementById("username").value;
+let password=document.getElementById("password").value;
+
+if(username=="student" && password=="quiz123")
+{
+    alert("Login Successful!");
+    window.location="quiz.html";
+}
+else
+{
+    alert("Invalid Username or Password");
+}
+
+}
+
+</script>
+
+</body>
+</html>
