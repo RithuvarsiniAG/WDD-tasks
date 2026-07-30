@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Time Table</title>
+
+    <style>
+        body{
+            background-color:#bfe8f7;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;
+        }
+
+        h1{
+            color:purple;
+            margin-bottom:5px;
+        }
+
+        h2{
+            margin:5px;
+        }
+
+        h3{
+            text-decoration:underline;
+            margin:8px;
+        }
+
+        table{
+            border-collapse:collapse;
+            margin:auto;
+            border:3px solid black;
+        }
+
+        th,td{
+            border:2px solid black;
+            padding:10px;
+            text-align:center;
+            font-weight:bold;
+        }
+
+        th{
+            background:#b5dceb;
+        }
+
+        .lang{
+            background:#8B0000;
+            color:white;
+        }
+
+        .maths{
+            background:#ff1493;
+        }
+
+        .english{
+            background:#ffa07a;
+        }
+
+        .cn{
+            background:#d8a8e8;
+        }
+
+        .wt{
+            background:#48d1cc;
+        }
+
+        .cnlab{
+            background:#48d1cc;
+        }
+
+        .pe{
+            background:#adff2f;
+        }
+
+        .break{
+            background:white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>PSGR KRISHNAMMAL COLLEGE FOR WOMEN</h1>
+
+<h2>COIMBATORE</h2>
+
+<h3>DEPARTMENT OF COMPUTER SCIENCE</h3>
+
+<h2 style="font-size:24px;">1st B.Sc CS with Cognitive Systems</h2>
+
+<table>
+
+<tr>
+<th width="80">Day</th>
+<th width="110">12.50-1.40</th>
+<th width="110">1.40-2.30</th>
+<th width="110">2.30-2.50</th>
+<th width="110">2.50-3.40</th>
+<th width="110">3.40-4.30</th>
+<th width="110">4.30-5.20</th>
+</tr>
+
+<tr>
+<td>I</td>
+<td class="lang">Language</td>
+<td class="cn">CN</td>
+
+<td class="break" rowspan="6">BREAK</td>
+
+<td class="maths">Maths</td>
+<td class="english">English</td>
+<td class="wt">WT Lab II</td>
+</tr>
+
+<tr>
+<td>II</td>
+<td class="wt" colspan="2">WT Lab II</td>
+<td class="lang">Language</td>
+<td class="english">English</td>
+<td class="maths">Maths</td>
+</tr>
+
+<tr>
+<td>III</td>
+<td class="english">English</td>
+<td class="cn">CN</td>
+<td class="maths">Maths</td>
+<td class="lang">Language</td>
+<td class="pe">PE</td>
+</tr>
+
+<tr>
+<td>IV</td>
+<td class="maths">Maths</td>
+<td class="lang">Language</td>
+<td class="pe">PE</td>
+<td class="english">English</td>
+<td class="cn">CN</td>
+</tr>
+
+<tr>
+<td>V</td>
+<td class="english">English</td>
+<td class="cn">CN</td>
+<td class="cnlab">CN Lab</td>
+<td class="lang">Language</td>
+<td class="maths">Maths</td>
+</tr>
+
+<tr>
+<td>VI</td>
+<td class="cnlab" colspan="2">CN Lab</td>
+<td class="maths">Maths</td>
+<td class="pe">PE</td>
+<td class="lang">Language</td>
+</tr>
+
+</table>
+
+</body>
+</html>
