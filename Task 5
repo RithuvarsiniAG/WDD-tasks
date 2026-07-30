@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body{
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 5px;
+            border-top: 3px solid #2f4f2f;
+        }
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        h2{
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        label{
+            display: inline-block;
+            width: 110px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"]{
+            width: 150px;
+            height: 20px;
+        }
+
+        textarea{
+            width: 270px;
+            height: 80px;
+        }
+
+        .section{
+            margin-top: 15px;
+        }
+
+        .checkbox-group label,
+        .radio-group label{
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<h2>Personal Information</h2>
+
+<form>
+
+<label>First Name:</label>
+<input type="text" value="rithu"><br>
+
+<label>Last Name:</label>
+<input type="text" value="varsini"><br>
+
+<label>Email:</label>
+<input type="email"><br>
+
+<label>Phone Number:</label>
+<input type="tel"><br>
+
+<label>Date of Birth:</label>
+<input type="date"><br><br>
+
+<label>Gender:</label>
+
+<div class="radio-group" style="display:inline;">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</div>
+
+<div class="section">
+<label style="vertical-align:top;">Address:</label>
+
+<textarea></textarea>
+</div>
+
+<div class="section">
+
+<p><b>Courses Interested In:</b></p>
+
+<div class="checkbox-group">
+
+<input type="checkbox"> Computer Science<br>
+
+<input type="checkbox"> Information Technology<br>
+
+<input type="checkbox"> Data Science<br>
+
+<input type="checkbox"> Artificial Intelligence<br>
+
+<input type="checkbox"> Cyber Security<br>
+
+<input type="checkbox"> Other
+<input type="text" style="width:120px;">
+
+</div>
+
+</div>
+
+</form>
+
+</body>
+</html>
